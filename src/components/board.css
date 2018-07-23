@@ -1,0 +1,73 @@
+button:focus {
+    outline:0;
+}
+button:hover {
+    cursor: pointer;
+}
+
+.main_board {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 15px;
+    background-color: #20263B;
+    width: 98vw;
+    height: 96vh;
+    margin: auto;
+    position: relative;
+   border-radius: 4px;
+   vertical-align: baseline;
+   
+
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.main_board-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+.main_board-nav button {
+    display:flex;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 20px;
+    
+}
+
+.main_board h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+
+}
+
+.game-card {
+   max-width: 380px;
+    background-color: #394264;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.feedback {
+    background-color: #cc324b;
+    color: white;
+    font-size: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
