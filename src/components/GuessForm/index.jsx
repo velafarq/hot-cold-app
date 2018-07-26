@@ -2,24 +2,14 @@ import React from 'react';
 import './guess-form.css';
 
 export default function GuessForm(props) {
-   
-
     const inputRef = React.createRef();
     const handleFormSubmit = e => {
         e.preventDefault();
-        const value = inputRef.current.value;
+        const userGuess = parseInt(inputRef.current.value);
+        props.formSubmit(e, userGuess);
         document.getElementById("form").reset();
-        let userGuess = '';
-        props.guesses.map((guess) => userGuess=guess);
-        if(value === userGuess) {
-            alert('You guessed this number already.')
-        } else {
-    props.formSubmit(e, value);
- 
-        }
     };
 
-    
     return (
         
         <div>

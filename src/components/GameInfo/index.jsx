@@ -3,12 +3,8 @@ import './game-info.css';
 
 export default function GameInfo(props) {
 
-    function closeGameInfo() {
-        document.getElementById("game-info").classList.add("hidden");
-    }
-
     return (
-        <div className="what-container hidden" id="game-info">
+        <div className="what-container" id="game-info">
        
         <section className="content-box">
         <h3>What do I do?</h3>
@@ -20,7 +16,7 @@ export default function GameInfo(props) {
                 <li>3. You will <strong>get feedback</strong>  on how close ("hot") or far ("cold") your guess is.</li>
             </ul>
             <p>So, Are you ready?</p>
-            <a className="close" href="#" onClick={closeGameInfo}>Got It!</a>
+            <a className="close" href="#" onClick={props.toggleInfo}>Got It!</a>
         </div>
         </section>
         </div>
