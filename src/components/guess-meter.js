@@ -1,4 +1,5 @@
 import React from 'react';
+import './guess-meter.css';
 
 export default function GuessMeter(props) {
 const length = props.guesses.length;
